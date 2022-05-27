@@ -9,7 +9,7 @@ public class WebHookRestController {
 	
 	@PostMapping // http://localhost:8080/api/webhook
     public ResponseEntity<String> print(@RequestBody String requestBody) {
-        System.out.println("## Webhook Event Received +++++" + requestBody);
+        System.out.println("## Webhook Event Received ****** " + requestBody);
         return new ResponseEntity<String >(requestBody, HttpStatus.OK);
     }
 
